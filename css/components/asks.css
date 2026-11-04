@@ -1,0 +1,243 @@
+
+.asks {
+    padding-bottom: 30px;
+}
+
+.asksContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.asksContainer-item {
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.asksContainer-item-bottom {
+
+    max-height: 0;
+    overflow: hidden;
+    padding-bottom: 15px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+
+.asksContainer-item.active .asksContainer-item-bottom {
+    opacity: 1;
+}
+
+
+.label {
+    font-weight: 400;
+    font-size: 35px;
+    width: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    transition: transform 0.3s ease;
+
+    order: 1;
+}
+
+.ask-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    order: 2;
+}
+
+.asksContainer-item-bottom .ask-text {
+    font-size: 14px;
+    padding-left: 50px;
+    text-transform: initial;
+    line-height: 18px;
+}
+
+
+.asks {
+    padding-bottom: 30px;
+}
+
+.q-line{
+    margin-bottom: 16px;
+}
+
+.asksContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.asksContainer-item {
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.asksContainer-item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    gap: 20px;
+}
+
+.asksContainer-item-top div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.asksContainer-item-top .mainText{
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+}
+.asksContainer-item-top .q{
+    border-radius: 73px;
+    min-width: 35px;
+    max-height: 35px;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+    color: #8F8F8F;
+    background: rgba(255, 255, 255, 0.12);
+    transition: .3s;
+}
+.q-arrow{
+    width: 20px;
+    object-fit: contain;
+    transition: .3s;
+}
+
+.asksContainer-item-bottom {
+
+    max-height: 0;
+    overflow: hidden;
+    padding-bottom: 15px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.asksContainer-item.active .asksContainer-item-bottom {
+    opacity: 1;
+}
+
+.asksContainer-item-bottom p {
+    max-width: 100%;
+    padding-right: 10px;
+    line-height: 18px;
+}
+
+@media (max-width: 440px) {
+    .asks {
+        padding-bottom: 6.81vw;
+    }
+
+    .asksContainer {
+        margin: 9.09vw auto;
+    }
+
+    .q-line {
+        margin-bottom: 3.63vw;
+    }
+
+    .asksContainer-item-top {
+        padding: 2.27vw 0;
+        gap: 4.54vw;
+    }
+
+    .asksContainer-item-top div {
+        gap: 2.27vw;
+    }
+
+    /* Шрифти та іконки */
+    .label {
+        font-size: 7.95vw;
+        width: 6.81vw;
+    }
+
+    .ask-text {
+        font-size: 3.63vw;
+    }
+
+    .asksContainer-item-top .mainText {
+        font-size: 3.86vw;
+    }
+
+    .asksContainer-item-top .q {
+        border-radius: 16.59vw;
+        min-width: 7.95vw;
+        max-height: 7.95vw;
+        font-size: 3.41vw;
+        line-height: 7.95vw;
+    }
+
+    .q-arrow {
+        width: 4.54vw;
+    }
+
+    /* Випадаюча частина */
+    .asksContainer-item-bottom {
+        padding-bottom: 3.41vw;
+    }
+
+    .asksContainer-item-bottom .ask-text {
+        font-size: 3.18vw;
+        padding-left: 11.36vw;
+        line-height: 4.09vw;
+    }
+
+    .asksContainer-item-bottom p {
+        padding-right: 2.27vw;
+        line-height: 4.09vw;
+    }
+}
+
+@media(min-width: 800px) {
+    .asks{
+        max-width: 85vw;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 7vw;
+    }
+
+    .q-arrow{
+        width: 2vw;
+    }
+
+    .asksContainer-item-top .q{
+        font-size: 1.3vw;
+        min-width: 2.4vw;
+        min-height: 2.4vw;
+        max-height: 2.4vw;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .asksContainer-item-bottom p{
+        padding-bottom: 2vw;
+    }
+
+    .asksContainer-item-top{
+        padding: 2vw 0;
+    }
+
+    .asksContainer-item-top .mainText{
+        font-size: 1.4vw;
+    }
+}

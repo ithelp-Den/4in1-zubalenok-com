@@ -1,0 +1,272 @@
+.howWillGo {
+    padding: 40px 10px;
+    background: radial-gradient(50.97% 50.97% at 13.08% 46.3%, #1732e175 0%, #000 100%), rgba(0, 0, 0, 0.49);
+}
+
+.howWillGo .header__price-button{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 378px;
+}
+
+.howWillGo__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.howWillGo__content-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
+    padding: 40px 0;
+}
+
+.howWillGo__content-nums {
+    width: 55px;
+    object-fit: contain;
+}
+
+.itm-1 {
+    width: 297px;
+    height: 108px;
+}
+
+.itm-2 {
+    width: 297px;
+    height: 127px;
+}
+
+.itm-3 {
+    width: 297px;
+    height: 108px;
+}
+
+.itm-4 {
+    width: 297px;
+    height: 107px;
+}
+
+.howWillGo__content-elements-item {
+    background-image: url(../../images/blue-frame.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.howWillGo__content-elements-item .mainText span {
+    font-weight: 500;
+}
+
+.howWillGo__content-elements-item img {
+    width: 68px;
+    object-fit: contain;
+}
+
+.itm-2 img{
+    width: 60px;
+}
+.itm-4 img{
+    width: 40px;
+    margin-right: 2%;
+}
+
+@media (max-width: 440px) {
+    .howWillGo {
+        padding: 9.09vw 2.27vw;
+    }
+
+    .howWillGo__content {
+        gap: 4.54vw;
+    }
+
+    .howWillGo__content-elements {
+        gap: 5.68vw;
+        width: 80%; /* Залишаємо у %, щоб зберегти логіку контейнера */
+        padding: 9.09vw 0;
+    }
+
+    .howWillGo__content-nums {
+        width: 12.5vw;
+    }
+
+    /* Розміри карток itm-1, 2, 3, 4 */
+    .itm-1, .itm-2, .itm-3, .itm-4 {
+        width: 67.5vw; /* 297px */
+    }
+
+    .itm-1, .itm-3 {
+        height: 24.54vw; /* 108px */
+    }
+
+    .itm-2 {
+        height: 28.86vw; /* 127px */
+    }
+
+    .itm-4 {
+        height: 24.31vw; /* 107px */
+    }
+
+    .howWillGo__content-elements-item {
+        padding: 3.63vw;
+    }
+
+    /* Зображення всередині елементів */
+    .howWillGo__content-elements-item img {
+        width: 15.45vw; /* 68px */
+    }
+
+    .itm-2 img {
+        width: 13.63vw; /* 60px */
+    }
+
+    .itm-4 img {
+        width: 9.09vw; /* 40px */
+        margin-right: 2%; /* Залишаємо %, як у вас в коді */
+    }
+}
+
+@media(min-width: 800px){
+    .howWillGo-container{
+        max-width: 85vw;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .howWillGo__content{
+        gap: 5vw;
+    }
+
+    .howWillGo__content-elements{
+        gap: 5vw;
+        width: 100%;
+        padding: 4vw 0;
+        margin-top: 4vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .howWillGo__content-nums{
+        display: none;
+
+    }
+
+
+    .itm-4{
+        width: 18.5vw;
+        height: 6.6vw;
+    }
+
+    .howWillGo__content-elements-item{
+        padding: 1.2vw 2vw 1.2vw 1.2vw;
+        margin-top: 2vw;
+        position: relative;
+        background-image: url(../../images/blue-desc-frame.webp);
+    }
+
+    .howWillGo__content-elements-item::before{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4vw;
+        height: 4vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../images/num-frame.webp);
+        position: absolute;
+        top: -5vw;
+        left: 0;
+        color: #007AFE;
+        font-family: 'Gilroy';
+        font-size: 2vw;
+        font-weight: 600;
+    }
+
+    .howWillGo__content-elements-item:nth-child(1):before{
+        content: "01";
+    }
+
+    .howWillGo__content-elements-item:nth-child(2):before{
+        content: "02";
+    }
+
+    .howWillGo__content-elements-item:nth-child(3):before{
+        content: "03";
+    }
+
+    .howWillGo__content-elements-item:nth-child(4):before{
+        content: "04";
+    }
+
+    .howWillGo__content-elements-item img{
+        width: 4.25vw;
+    }
+
+    .howWillGo .mainTitle br{
+        display: none;
+    }
+
+    .itm-1 img{
+        width: 11vw;
+        margin-right: -3vw;
+    }
+
+    .howWillGo .header__price-button{
+        max-width: 100%;
+    }
+
+    .itm-2 img{
+        width: 11vw;
+        margin-right: -3vw;
+    }
+    
+    .itm-3 img{
+        width: 11vw;
+        margin-right: -3vw;
+    }
+
+    .itm-4 img{
+        width: 8vw;
+        margin-right: -1.5vw;
+    }
+
+    .itm-1{
+        order: 1;
+    }
+
+    .itm-2{
+        order: 3;
+    }
+    
+    .itm-3{
+        order: 2;
+    }
+
+    .itm-4{
+        order: 4;
+    }
+
+    .itm-1,
+    .itm-2,
+    .itm-3,
+    .itm-4 {
+        width: 38vw;
+        height: 8vw !important;
+    }
+
+    .itm-1, .itm-3 {
+        height: 4.54vw; /* 108px */
+    }
+
+    .itm-2 {
+        height: 5.86vw; /* 127px */
+    }
+
+    .itm-4 {
+        height: 4.31vw; /* 107px */
+    }
+}

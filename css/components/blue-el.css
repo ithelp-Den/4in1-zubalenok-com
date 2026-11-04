@@ -1,0 +1,123 @@
+.blue-g {
+    padding: 14px 24px;
+    background: linear-gradient(90deg, #53dc6c 0%, #0052ae 34.09%, #000b17 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.blue-g-left {
+
+}
+
+.blue-g-left-title {
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+text-transform: lowercase;
+color: #fff;
+}
+
+.blue-g-left-value {
+font-weight: 500;
+font-size: 58px;
+line-height: 100%;
+text-transform: uppercase;
+font-family: 'DrukCyr-medium';
+color: #fff;
+display: flex;
+align-items: flex-end;
+}
+
+.blue-g-left-value span{
+font-size: 20px;
+line-height: 30px;
+white-space: nowrap;
+}
+
+.blue-g-right {
+
+}
+
+.blue-g-right-title {
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.blue-g-right-title span{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.blue-g-right-text {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 440px) {
+    .blue-g {
+        padding: 3.18vw 5.45vw;
+        gap: 9.09vw;
+    }
+
+    .blue-g-left-title {
+        font-size: 3.18vw;
+    }
+
+    .blue-g-left-value {
+        font-size: 13.18vw;
+    }
+
+    .blue-g-left-value span {
+        font-size: 4.54vw;
+        line-height: 6.81vw;
+    }
+
+    .blue-g-right-title {
+        font-size: 3.86vw;
+        padding-bottom: 1.13vw;
+    }
+
+    .blue-g-right-text {
+        font-size: 3.41vw;
+    }
+}
+
+@media(min-width: 800px){
+    .blue-g {
+        justify-content: center;
+        margin-top: 7vw;
+    }
+    .blue-g-right{
+        display: flex;
+    }
+    .blue-g-left-title {
+        font-size: 1.18vw;
+    }
+
+    .blue-g-left-value {
+        font-size: 5vw;
+    }
+
+    .blue-g-left-value span {
+        font-size: 2vw;
+        line-height: 2.6vw;
+    }
+
+    .blue-g-right-title {
+        font-size: 1.2vw;
+        padding-bottom: 0vw;
+        padding-top: 1vw;
+        padding-right: 1vw;
+    }
+
+    .blue-g-right-text {
+        padding-top: 1vw;
+        font-size: 1.2vw;
+    }
+}

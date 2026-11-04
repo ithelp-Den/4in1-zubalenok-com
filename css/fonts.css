@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneuethin.woff2') format('woff2'),
+         url('../fonts/bebasneuethin.woff') format('woff'),
+         url('../fonts/bebasneuethin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneuebold.woff2') format('woff2'),
+         url('../fonts/bebasneuebold.woff') format('woff'),
+         url('../fonts/bebasneuebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'DrukCyr-bold';
+    src: url('https://itden-cdn.b-cdn.net/DrukCyr-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DrukCyr-medium';
+    src: url('https://itden-cdn.b-cdn.net/DrukCyr-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Songer Condensed';
+    src: url('../fonts/SONGERCondensed.woff2') format('woff2'),
+         url('../fonts/SONGERCondensed.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('https://itden-cdn.b-cdn.net/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Gilroy Medium */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('https://itden-cdn.b-cdn.net/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Gilroy Bold */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('https://itden-cdn.b-cdn.net/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

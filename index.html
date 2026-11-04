@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHPCK3JR72"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RHPCK3JR72');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="dns-prefetch" href="https://itden-cdn.b-cdn.net">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://itden-cdn.b-cdn.net" crossorigin>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    
+    <link rel="stylesheet" href="./css/fonts.css">
+    
+    <script>
+        function handleCdnError() {
+          const link = document.getElementById('dynamic-assets');
+          if (!link.dataset.fallback) {
+            console.warn("CDN Down: Switching to local assets...");
+            link.href = "./css/main.css"; // Шлях до локального дубля
+            link.dataset.fallback = "true";
+            document.documentElement.classList.add('cdn-failed');
+          }
+        }
+      </script>
+    <link 
+        rel="stylesheet" 
+        href="https://itden-cdn.b-cdn.net/zubalenok-combo.com/main-cdn.css" 
+        id="dynamic-assets"
+        fetchpriority="high"
+        onerror="handleCdnError()"
+      >
+    <link rel="stylesheet" href="./css/contacts-new.css">
+      
+      
+      
+      
+      <style>
+       
+       @media (max-width: 450px) {
+    .header__price-button {
+        font-size: 7.91vw;
+    }
+}
+            .train-elements-item img,
+          .about-info-img{
+              width: 100%;
+          }
+          .courses-element img {
+                min-width: 27vw;
+            }
+            @media (min-width: 800px) {
+                .header{
+                        background-position: center right;
+        background: url(https://itden-cdn.b-cdn.net/zubalenok-combo.com/main-fon-2.webp?quality=95&width=100%) no-repeat;
+        background-size: 100%;
+            }
+            
+            .header__price{
+                width: 100%;
+            }
+                .courses-element img {
+                    width: 15vw;
+                    min-width: 15vw;
+                }
+                .first-slider-next, .first-slider-prev {
+                    background: url(../../images/s-arrow.png) no-repeat;
+                    background-size: contain;
+                }
+                .first-slider-next, .first-slider-next {
+                    background: url(../../images/s-arrow.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            
+            .signup-form input{
+                color: #000;
+            }
+            
+            @font-face {
+                font-family: 'Anton';
+                src: url('./fonts/Anton-Regular.ttf') format('truetype');
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            @font-face {
+                font-family: 'Outfit-Regular';
+                src: url('./fonts/Outfit-Regular.ttf') format('truetype');
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            @font-face {
+                font-family: 'Outfit-Bold';
+                src: url('./fonts/Outfit-Regular.ttf') format('truetype');
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            .promoForm{
+    display: flex;
+    width: 100.23vw; /* 429px */
+    padding: 5.61vw 5.61vw 11.68vw 5.61vw; /* 24px 24px 50px 24px */
+    flex-direction: column;
+    align-items: center;
+    gap: 5.61vw; /* 24px */
+    border-radius: 5.61vw 5.61vw 0 0; /* 24px */
+    border-top: 0.23vw solid rgba(255, 255, 255, 0.30); /* 1px */
+    background: rgba(0, 29, 61, 0.60);
+    box-shadow: 0 -1.4vw 8.88vw 0 #000; /* -6px 38px */
+    position: fixed;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: all .3s;
+    z-index: 100;
+}
+
+.promoForm.active{
+    transform: translateY(0%);
+}
+
+.promoForm-button{
+    display: flex;
+    padding: 1.52vw 5.61vw; /* 6.513px 24px */
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 2.28vw; /* 9.769px */
+    font-family: 'Anton';
+    background: radial-gradient(50% 50% at 50% 50%, #003E81 0%, #007BFF 100%);
+    box-shadow: 0 0.47vw 2.8vw 0 rgba(0, 0, 0, 0.35); /* 2px 12px */
+    color: #FFF;
+    text-align: center;
+    font-family: Anton;
+    font-size: 7.01vw; /* 30px */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56vw; /* 2.4px */
+    text-transform: uppercase;
+}
+
+.promoForm-text{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-family: 'Outfit-Regular';
+    font-size: 3.74vw; /* 16px */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 196%;
+    text-transform: uppercase;
+}
+
+.promoForm-text span{
+    color: #FFF;
+    font-family: 'Outfit-Bold';
+    font-weight: 700;
+}
+
+@media(min-width: 500px){
+    .promoForm{
+        display: none !important;
+    }
+}
+      </style>
+      
+      
+
+    <link rel="stylesheet" href="./css/components/popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="./css/bf-update.css">
+    <title>4-in-1 program</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "umi70oi8gm");
+</script>
+
+    
+    <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
+    <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_npZmMuiBfm_zG" async></script>
+ 
+ </head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header-navline">
+                <div class="header-wrapper">
+                    <img src="./images/logo.webp" alt="logo" class="header-logo">
+                    <nav class="header-nav">
+                        <ul class="header-list">
+                            <li><a href="#program" class="header-link">Program</a></li>
+                            <li><a href="#reviews" class="header-link">Reviews</a></li>
+                            <li><a href="#why-choose" class="header-link">Why choose</a></li>
+                            <li><a href="#author" class="header-link">Author</a></li>
+                            <li><a href="#faq" class="header-link">FAQ</a></li>
+                        </ul>
+                        <a href="https://mmoschool.online/shop/item/13106" class="check-click">
+                            <div class="header-nav-button">
+                                Buy Now
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+            </nav>
+            <div class="header__top">
+                <h1 class="header-title">
+                    4-in-1
+                </h1>
+                <h2 class="header-subTitle">
+                    <span>
+                        6 months
+                    </span>
+                    program
+                </h2>
+                <ul class="header-desc__list">
+                    <li class="header-desc__list-item">
+                        <img src="./images/check.png" alt="">
+                        Beginner Mobility
+                    </li>
+                    <li class="header-desc__list-item">
+                        <img src="./images/check.png" alt="">
+                        Back Pain Relief
+                    </li>
+                    <li class="header-desc__list-item">
+                        <img src="./images/check.png" alt="">
+                        Front & middle split
+                    </li>
+                </ul>
+            </div>
+            <div class="header__bottom">
+                <a href="https://mmoschool.online/shop/item/13106" class="check-click bf-deal">
+                    <span class="bf-deal__title">Black Friday Deal!</span>
+                    <span class="bf-deal__btn">
+                        <span class="bf-deal__btn-text">Dont miss this offer</span>
+                        <span class="bf-deal__price">€66</span>
+                    </span>
+                </a>
+                <div class="bf-trusted">
+                    <img src="./images/bf/avatars.webp" alt="" class="bf-trusted__avatars" width="60" height="25">
+                    <img src="./images/bf/stars.webp" alt="5 stars" class="bf-trusted__stars" width="64" height="12">
+                    <span class="bf-trusted__text">Trusted by <b>60,000+</b> happy women</span>
+                </div>
+                <div class="blueBlock blueBlock-desc" >
+            <h3 class="blueBlock-title">
+                <img src="./images/cash-flow.png" alt="">
+                14-Day MONEY BACK
+            </h3>
+            <p class="blueBlock-text">
+                Not sure? <span>Try it</span><br>
+                Don’t like it - full refund, <br>
+                no questions asked<br>
+            </p>
+        </div>
+            </div>
+            
+        </header>
+        <div class="blueBlock blueBlock-mob">
+            <h3 class="blueBlock-title">
+                <img src="./images/cash-flow.png" alt="">
+                14-Day MONEY BACK
+            </h3>
+            <p class="blueBlock-text">
+                Not sure? <span>Try it</span><br>
+                Don’t like it - full refund, <br>
+                no questions asked<br>
+            </p>
+        </div>
+        <div class="choise__product" id="program">
+            <h2 class="mainTitle">
+                Why <span>Choose thіs</span><br>
+                Combo Product?
+            </h2>
+            <div class="choise__product-column">
+                <div class="choise__product-column-item">
+                    <h3 class="column-item-title">
+                        <img src="./images/product-1.png" alt="">
+                        Hard to find time for gym?
+                    </h3>
+                    <p class="mainText">
+                        Get 15-20 minutes of effective practice at home —
+                        <span>no gym needed!</span>
+                    </p>
+                </div>
+                <div class="choise__product-column-item">
+                    <h3 class="column-item-title">
+                        <img src="./images/product-2.png" alt="">
+                        Feel tired & unable to move freely?
+                    </h3>
+                    <p class="mainText">
+                        Program focuses on release  of
+                        <span> tension and move with ease</span>
+                    </p>
+                </div>
+                <div class="choise__product-column-item">
+                    <h3 class="column-item-title">
+                        <img src="./images/product-3.png" alt="">
+                        Tired of one-size-fits-all programs?
+                    </h3>
+                    <p class="mainText">
+                        <span class="bf-d">Get 3 courses</span><span class="bf-m">Get full body 4 courses</span>
+                        that cater to your flexibility, mobility, and fitness needs
+                    </p>
+                </div>
+                <div class="choise__product-column-item">
+                    <h3 class="column-item-title">
+                        <img src="./images/product-4.png" alt="">
+                        Scared of a year-long program?
+                    </h3>
+                    <p class="mainText">
+                        Yes! Full access for 6 months —
+                        <span>progress at your own pace</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="first-slider" id="reviews">
+            <h2 class="mainTitle">students Results</h2>
+
+            <div class="first-swiper swiper">
+                <div class="swiper-wrapper">
+                    <img src="./images/bf/review-01.webp" alt="Student result 2" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-02.webp" alt="Student result 3" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-03.webp" alt="Student result 4" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-04.webp" alt="Student result 5" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-05.webp" alt="Student result 6" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-06.webp" alt="Student result 7" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-07.webp" alt="Student result 8" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-08.webp" alt="Student result 9" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-09.webp" alt="Student result 10" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-10.webp" alt="Student result 11" loading="lazy" decoding="async" class="swiper-slide">
+                    <img src="./images/bf/review-00.webp" alt="Student result 12" loading="lazy" decoding="async" class="swiper-slide">
+                </div>
+            </div>
+
+            <div style="padding-right: 10px; display: flex; align-items: center;">
+                <div class="first-slider-pagination swiper-pagination"></div>
+                <div class="first-slider-prev"></div>
+                <div class="first-slider-next"></div>
+            </div>
+        </div>
+        <div class="courses" id="why-choose">
+            <h2 class="mainTitle">
+                What Courses are<br>
+                <span>included</span>?
+            </h2>
+            <p class="mainText" style="padding: 25px 0 40px 10px;">
+                <span>Full Body Approach</span>
+                <br>
+                It’s more than workouts — it’s a full-body journey.<br>Step by step, this program guides you through
+                courses that build mobility & confidence from head to toe. Each targets a different area - leading to
+                balanced, lasting transformation
+            </p>
+            <div class="courses-flex">
+            <div class="courses-element el-1">
+                <div>
+                    <h3 class="courses-element-title">
+                        Beginner mobility 2.0
+                    </h3>
+                    <p class="mainText">
+                        Perfect for anyone starting their journey to flexibility. Helps with <span>tension relief, and
+                            mobility</span> improvement without prior experience orspecial equipment
+                    </p>
+                </div>
+                <img src="https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-1.webp?width=1920" srcset=" https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-1.webp?width=200 200w, https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-1.webp?width=1200 1200w, https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-1.webp?width=1920 1920w" sizes="(max-width: 768px) 170px, 320px" alt="" loading="lazy" decoding="async" onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/course-label-1.webp';" />
+                <img src="./images/bf/course-top-beginner.webp" class="courses-element-top bf-m" alt="Beginner Mobility 2.0" loading="lazy" decoding="async" width="178" height="148" />
+            </div>
+            <div class="courses-element el-2">
+                <div>
+                    <h3 class="courses-element-title">
+                        Front Split
+                    </h3>
+                    <p class="mainText">
+                        If you are feeling stiff and inflexible? If you want better posture and look?<br>Course for those
+                        who want to <span>move</span> with more <span>ease</span> & confidence
+                    </p>
+                </div>
+                <img src="https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-2.webp?width=1920" srcset=" https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-2.webp?width=200 200w, https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-2.webp?width=1200 1200w, https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-2.webp?width=1920 1920w" sizes="(max-width: 768px) 170px, 320px" alt="" loading="lazy" decoding="async" onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/course-label-2.webp';" />
+                <img src="./images/bf/course-top-front.webp" class="courses-element-top bf-m" alt="Front Split" loading="lazy" decoding="async" width="178" height="148" />
+            </div>
+            <div class="courses-element el-3">
+                <div>
+                    <h3 class="courses-element-title">
+                        Middle Split
+                    </h3>
+                    <p class="mainText">
+                        Designed to safely guide you into deeper middle split.<br>Your key to faster, safer, and more
+                        <span>balanced progress</span>
+                    </p>
+                </div>
+                <img src="https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-3.webp?width=1920" srcset=" https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-3.webp?width=200 200w, https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-3.webp?width=1200 1200w, https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-3.webp?width=1920 1920w" sizes="(max-width: 768px) 170px, 320px" alt="" loading="lazy" decoding="async" onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/course-label-3.webp';" />
+                <img src="./images/bf/course-top-middle.webp" class="courses-element-top bf-m" alt="Middle Split" loading="lazy" decoding="async" width="178" height="148" />
+            </div>
+            <div class="courses-element el-4">
+                <div>
+                    <h3 class="courses-element-title">
+                        <span class="bf-d">Back Mobility</span><span class="bf-m">Upper Body Mobility</span>
+                    </h3>
+                    <p class="mainText bf-d">
+                        Helps to strengthen muscles, improve posture, and <span>restore spine mobility</span><br>Works
+                        well with splits training - strong and mobile back protects your spine and supports faster
+                        progress
+                    </p>
+                    <p class="mainText bf-m">
+                        Helps to strengthen muscles, improve posture, <span>restore spine mobility. Strong and mobile</span>
+                        upper body protects your spine + supports faster progress
+                    </p>
+                </div>
+                <img src="https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-4.webp?width=1920" srcset=" https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-4.webp?width=200 200w, https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-4.webp?width=1200 1200w, https://itden-cdn.b-cdn.net/zubalenok-combo.com/course-label-4.webp?width=1920 1920w" sizes="(max-width: 768px) 170px, 320px" alt="" loading="lazy" decoding="async" onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/course-label-4.webp';" />
+                <img src="./images/bf/course-top-upper.webp" class="courses-element-top bf-m" alt="Upper Body Mobility" loading="lazy" decoding="async" width="178" height="148" />
+            </div>
+            </div>
+        </div>
+        <section class="bf-gift">
+            <a href="https://mmoschool.online/shop/item/13106" class="check-click bf-gift__card">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="./images/bf/gift-desktop.webp">
+                    <img src="./images/bf/gift-mobile.webp" alt="Buy now = get a gift. Order before the timer hits zero and get 2 sessions of InHome Power for free: Karyna's home glute training course" loading="lazy" decoding="async">
+                </picture>
+            </a>
+            <a href="https://mmoschool.online/shop/item/13106" class="check-click bf-offer">
+                <span class="bf-offer__text">Dont miss special offer</span>
+                <span class="bf-offer__badge">-33%</span>
+            </a>
+            <p class="bf-gift__note">Join <b>60,000+ students</b> already training with Karyna</p>
+        </section>
+        <div class="blue-g">
+            <div class="blue-g-left">
+                <h3 class="blue-g-left-title">
+                    for only
+                </h3>
+                <h2 class="blue-g-left-value">
+                    €66
+                    <span>/6 months</span>
+                </h2>
+            </div>
+            <div class="blue-g-right">
+                <h3 class="blue-g-right-title">
+                    Save 10 times <span>the price</span>
+                </h3>
+                <p class="blue-g-right-text">
+                    — full access for only 66€ per 6 months!
+                </p>
+            </div>
+        </div>
+        <div class="about" id="author">
+            <div class="about-felm">
+            <h2 class="mainTitle">
+                About the Author
+            </h2>
+            <p class="mainText" style="padding: 25px 0 40px 0px;">
+                <span>Full Body Approach</span>
+                <br>
+                It’s more than workouts — it’s a full-body journey.<br>Step by step, this program guides you through
+                courses that build mobility & confidence from head to toe. Each targets a different area - leading to
+                balanced, lasting transformation
+            </p>
+            </div>
+            <img src="./images/bf/author-desktop.webp" class="about-info-img" alt="Karyna Zubalenok: over 30,000 people, 11 years of experience, +10 programs, supportive teaching" loading="lazy" decoding="async" width="587" height="857">
+
+            <div class="about-numbers">
+                <div>
+                    <h2 class="about-numbers-value">
+                        <span class="count-up" data-target="2.2">0</span> M
+                    </h2>
+                    <p class="about-numbers-text">Instagram<br>followers</p>
+                </div>
+                <div>
+                    <h2 class="about-numbers-value">
+                        <span class="count-up" data-target="10000">0</span>+
+                    </h2>
+                    <p class="about-numbers-text">Middle & Front splits<br>Happy students</p>
+                </div>
+                <div>
+                    <h2 class="about-numbers-value">
+                        <span class="count-up" data-target="11">0</span>+
+                    </h2>
+                    <p class="about-numbers-text">Years in pro<br>sports</p>
+                </div>
+            </div>
+            <div class="about-formula">
+                <h3 class="about-formula-title">
+                    The Formula for Busy Women
+                </h3>
+                <div class="about-formula-element">
+                    <h2 class="about-formula-element-num">
+                        01
+                    </h2>
+                    <p class="mainText">
+                        Improves lymph flow, tones your body & restores ease of movement
+                    </p>
+                    <h3 class="about-formula-element-gr">
+                        15-20 min a day
+                    </h3>
+                </div>
+                <div class="about-formula-element">
+                    <h2 class="about-formula-element-num">
+                        02
+                    </h2>
+                    <p class="mainText">
+                        Perfect for advancing your full-body wellbeing
+                    </p>
+                    <h3 class="about-formula-element-gr">
+                        Beginners\Professionals
+                    </h3>
+                </div>
+                <p class="about-formula-bottomText">
+                    Minimal time →
+                    <span>maximum results</span>
+                </p>
+                <h3 class="about-formula-title" style="text-align: center; padding-bottom: 30px;">
+                    your new formula
+                    <br>
+                    for health!
+                </h3>
+                
+            </div>
+            <a href="https://mmoschool.online/shop/item/13106" class="check-click">
+                <div class="header__price-button">
+                    JOIN NOW
+                </div>
+            </a>
+        </div>
+        <div class="train">
+            <h2 class="mainTitle" style="padding-bottom: 30px;">
+                This course is <br>
+                <span> perfect for you</span> if <br>
+                you want:
+            </h2>
+            <div class="train-elements-wrp">
+            <div class="train-elements">
+                <div class="train-elements-item">
+                    <img 
+src="https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-1.webp?width=1200"
+srcset="
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-1.webp?width=200 200w,
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-1.webp?width=400 400w,
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-1.webp?width=800 800w"
+sizes="(max-width: 768px) 150px, 370px"
+alt=""
+loading="lazy"
+decoding="async"
+onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/karina-icon-1.webp';"
+/>
+
+                    <h3 class="train-elements-item-title">
+                        A toned body <br>without intense <br>workouts
+                    </h3>
+                    <p class="mainText">
+                        Perfect if you want <br> to get <span>better<br> flexibility</span> in a relaxed<br> & enjoyable
+                        way
+                    </p>
+                </div>
+                <div class="train-elements-item">
+                    <img 
+src="https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-2.webp?width=1200"
+srcset="
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-2.webp?width=200 200w,
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-2.webp?width=400 400w,
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-2.webp?width=800 800w"
+sizes="(max-width: 768px) 150px, 370px"
+alt=""
+loading="lazy"
+decoding="async"
+onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/karina-icon-2.webp';"
+/>
+
+                    <h3 class="train-elements-item-title">
+                        Relief from <br>muscle tension <br>caused by stress
+                    </h3>
+                    <p class="mainText">
+                        This program helps <br><span>relax tight muscles<br></span> and boost your<br> mental well-being
+                    </p>
+                </div>
+            </div>
+            <div class="train-elements">
+                <div class="train-elements-item">
+                    <img 
+src="https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-3.webp?width=1200"
+srcset="
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-3.webp?width=200 200w,
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-3.webp?width=400 400w,
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-3.webp?width=800 800w"
+sizes="(max-width: 768px) 150px, 370px"
+alt=""
+loading="lazy"
+decoding="async"
+onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/karina-icon-3.webp';"
+/>
+
+                    <h3 class="train-elements-item-title">
+                        Better posture <br>and pain relief <br>from sitting all day
+                    </h3>
+                    <p class="mainText">
+                        Specifically<br> designed for those <br>who <span>work in an office<br></span> or have a
+                        sedentary <br>lifestyle
+                    </p>
+                </div>
+                <div class="train-elements-item">
+                    <img 
+src="https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-4.webp?width=1200"
+srcset="
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-4.webp?width=200 200w,
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-4.webp?width=400 400w,
+https://itden-cdn.b-cdn.net/zubalenok-combo.com/karina-icon-4.webp?width=800 800w"
+sizes="(max-width: 768px) 150px, 370px"
+alt=""
+loading="lazy"
+decoding="async"
+onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/karina-icon-4.webp';"
+/>
+
+                    <h3 class="train-elements-item-title">
+                        A workout <br>routine that fits <br>your schedule
+                    </h3>
+                    <p class="mainText">
+                        Whether you’re short <br>on time or want <br>longer sessions, our <br><span>program
+                            adapts</span> to <br>your needs
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="howWillGo">
+            <div class="howWillGo-container">
+            <h2 class="mainTitle">
+                How trainings will <br>go?
+            </h2>
+            <div class="howWillGo__content">
+                <img src="./images/nums.webp" class="howWillGo__content-nums" alt="">
+                <div class="howWillGo__content-elements">
+                    <div class="howWillGo__content-elements-item itm-1">
+                        <p class="mainText">
+                            <span>Practice at home</span>
+                            with just a yoga mat and blocks.<br>A small space is all you need
+                        </p>
+                        <img src="./images/train-icon-1.webp" alt="">
+                    </div>
+                    <div class="howWillGo__content-elements-item itm-2">
+                        <p class="mainText">
+                            <span>Immediate access</span>
+                            to the course after payment on your mail.<br>Start training whenever it suits you
+                        </p>
+                        <img src="./images/train-icon-2.webp" alt="">
+                    </div>
+                    <div class="howWillGo__content-elements-item itm-3">
+                        <p class="mainText">
+                            Watch the videos on your <span>phone, tablet, or computer</span> — designed for comfort and
+                            convenience.
+                        </p>
+                        <img src="./images/train-icon-3.webp" alt="">
+                    </div>
+                    <div class="howWillGo__content-elements-item itm-4">
+                        <p class="mainText">
+                            <span>6-month access</span>
+                            to revisit your favorite sessions or progress at your own pace.
+                        </p>
+                        <img src="./images/train-icon-4.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href="https://mmoschool.online/shop/item/13106" class="check-click">
+                <div class="header__price-button">
+                    START NOW
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="asks" style="padding-left: 10px; padding-right: 10px; padding-top: 20px;" id="faq">
+            <h2 class="mainTitle">
+                FAQ
+            </h2>
+            <div class="asksContainer">
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <div>
+                        <h3 class="q">Q</h3>
+                        <p class="mainText">
+                            Do you want more than just exercises — a complete solution for your body?
+                        </p>
+                        </div>
+                        <img src="./images/q-arrow.png" class="q-arrow" alt="">
+                    </div>
+                    <div class="asksContainer-item-bottom">
+                        <p class="mainText">
+                            We combine stretching, mobility, and deep recovery work, offering a <span>comprehensive approach</span> for holistic health, not just isolated results
+                        </p>
+                    </div>
+                </div>
+                <div class="q-line"></div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <div>
+                        <h3 class="q">Q</h3>
+                        <p class="mainText">
+                            Struggling with inconsistent training or frustrated by slow results?
+                        </p>
+                        </div>
+                        <img src="./images/q-arrow.png" class="q-arrow" alt="">
+                    </div>
+                    <div class="asksContainer-item-bottom">
+                        <p class="mainText">
+                            With access to three specialized courses for a full year, you'll see consistent progress at your own pace. + our continuous support, and personalized feedback ensure you stay motivated and on track until you reach your goals
+                        </p>
+                    </div>
+                </div>
+                <div class="q-line"></div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <div>
+                        <h3 class="q">Q</h3>
+                        <p class="mainText">
+                            Is this course suitable for beginners?
+                        </p>
+                        </div>
+                        <img src="./images/q-arrow.png" class="q-arrow" alt="">
+                    </div>
+                    <div class="asksContainer-item-bottom">
+                        <p class="mainText">
+                            Absolutely! Whether you're just starting or have been working on flexibility for a while, this course is designed for all levels. You’ll get step-by-step guidance, so you’ll feel confident every step of the way, even if you're new to flexibility training
+                        </p>
+                    </div>
+                </div>
+                <div class="q-line"></div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <div>
+                        <h3 class="q">Q</h3>
+                        <p class="mainText">
+                            What if I don’t get access to the course right away?
+                        </p>
+                        </div>
+                        <img src="./images/q-arrow.png" class="q-arrow" alt="">
+                    </div>
+                    <div class="asksContainer-item-bottom">
+                        <p class="mainText">
+                            If there’s any issue, we’ll fix it immediately! Simply reach out to our support team, and we’ll ensure you get access within 24 hours. We’re here to make sure you can start training right away!
+                        </p>
+                    </div>
+                </div>
+                <div class="q-line"></div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <div>
+                        <h3 class="q">Q</h3>
+                        <p class="mainText">
+                            Why choose our 4-in-1 course?
+                        </p>
+                        </div>
+                        <img src="./images/q-arrow.png" class="q-arrow" alt="">
+                    </div>
+                    <div class="asksContainer-item-bottom">
+                        <p class="mainText">
+                            This course isn’t just about stretching — it’s about improving your overall well-being. With our proven techniques and expert guidance, you’ll feel stronger, more confident, and healthier with every session
+                        </p>
+                    </div>
+                </div>
+                <div class="q-line"></div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <div>
+                        <h3 class="q">Q</h3>
+                        <p class="mainText">
+                            Will I have personal support throughout the course?
+                        </p>
+                        </div>
+                        <img src="./images/q-arrow.png" class="q-arrow" alt="">
+                    </div>
+                    <div class="asksContainer-item-bottom">
+                        <p class="mainText">
+                            Yes! We offer ongoing support and are here to guide you on your journey. If you have questions, need advice, or want to share your progress, our team is always available to help you stay on track and motivated
+                        </p>
+                    </div>
+                </div>
+                <div class="q-line"></div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <div>
+                        <h3 class="q">Q</h3>
+                        <p class="mainText">
+                            How long will it take for me to see results?
+                        </p>
+                        </div>
+                        <img src="./images/q-arrow.png" class="q-arrow" alt="">
+                    </div>
+                    <div class="asksContainer-item-bottom">
+                        <p class="mainText">
+                            Flexibility is a journey — with consistent practice, you’ll start seeing noticeable improvements in just 2-4 weeks. If you stick with it, your progress will grow faster, and soon you'll be hitting new goals!
+                        </p>
+                    </div>
+                </div>
+                <div class="q-line"></div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <div>
+                        <h3 class="q">Q</h3>
+                        <p class="mainText">
+                            Do I need special equipment for the course?
+                        </p>
+                        </div>
+                        <img src="./images/q-arrow.png" class="q-arrow" alt="">
+                    </div>
+                    <div class="asksContainer-item-bottom">
+                        <p class="mainText">
+                            The only equipment you need is a yoga mat and blocks. This course is designed to be done at home, without the need for fancy gym gear. You can practice in the comfort of your own space, making it easy and convenient to get started!
+                        </p>
+                    </div>
+                </div>
+                <div class="q-line"></div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <div>
+                        <h3 class="q">Q</h3>
+                        <p class="mainText">
+                            Why Our Combo Subscription?
+                        </p>
+                        </div>
+                        <img src="./images/q-arrow.png" class="q-arrow" alt="">
+                    </div>
+                    <div class="asksContainer-item-bottom">
+                        <p class="mainText">
+                            You get 4 courses in one — Beginner Mobility 2.0, Front Split, Middle Split and Back Mobility — with 6-month access for just €66. That's 10 times less than buying them separately, and the programs are built to work together, so you progress faster and more safely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <section class="contacts">
+            <h2 class="contacts__title">CONTACTS</h2>
+        
+            <div class="contacts__grid">
+                <a href="https://www.instagram.com/zubalenok" class="contacts__card">
+                    <img src="./images/contacts/inst.webp" alt="Instagram" class="contacts__icon">
+                    <span class="contacts__label">Zubalenok</span>
+                </a>
+                <a href="mailto:SUPPORT_ZUBALENOK@ZBL.AGENCY" class="contacts__card">
+                    <img src="./images/contacts/email.webp" alt="Email" class="contacts__icon contacts__icon--email">
+                    <span class="contacts__label">Email</span>
+                </a>
+                <a href="https://www.instagram.com/zubalenok.team" class="contacts__card">
+                    <img src="./images/contacts/support.webp" alt="Support" class="contacts__icon">
+                    <span class="contacts__label">Support</span>
+                </a>
+            </div>
+        
+            <a href="/policy" class="contacts__policy">PRIVACY POLICY AND USER AGREEMENT</a>
+            
+            <p class="contacts__copyright" style="text-transform: uppercase; opacity: 0.8">© 2026 ,  ZBL COMPANY BV, Roeselare, BE 1022336448 </p>
+            
+            <img src="./images/contacts/cards.webp" alt="Payment Methods" class="contacts__payments">
+        </section>
+        <a href="https://mmoschool.online/shop/item/13106" class="check-click">
+            <section class="promoForm" id="promoForm">
+                <div class="promoForm-button">
+                    I want to start todaY!
+                </div>
+                <p class="promoForm-text">
+                    660€ VALUE FOR JUST <span>0.35€/day</span> 
+                </p>
+            </section>
+        </a>
+    </div>
+
+    <script defer>
+            document.addEventListener('DOMContentLoaded', () => {
+                const footer = document.getElementById('promoForm'); // елемент, до якого додамо клас
+                if (!footer) return;
+
+                window.addEventListener('scroll', () => {
+                    // Перевіряємо, скільки проскролено
+                    if (window.scrollY >= 200) {
+                        footer.classList.add('active');
+                    } else {
+                        footer.classList.remove('active');
+                    }
+                });
+            });
+    </script>
+   <script>
+document.addEventListener('click', function(e) {
+  const el = e.target.closest('.check-click');
+  if (!el) return;
+
+  const href = el.getAttribute('href');
+  const label = el.textContent.trim() || href || '';
+
+  if (!href || href.startsWith('#')) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'go_to_payment', {
+        'event_category': 'engagement',
+        'event_label': label
+      });
+    }
+    return;
+  }
+
+  e.preventDefault();
+
+  if (el.dataset.isProcessing === 'true') return;
+  el.dataset.isProcessing = 'true';
+  el.style.pointerEvents = 'none';
+  el.style.opacity = '0.7';
+
+  var navigated = false;
+
+  function doNavigate() {
+    if (navigated) return;
+    navigated = true;
+    window.location.href = href;
+  }
+
+  // Страховка — перейдемо через 1.5с навіть якщо gtag не відповів
+  setTimeout(doNavigate, 1500);
+
+  if (typeof gtag === 'function') {
+    // Відправляємо подію БЕЗ event_callback щоб не ламати inject.js
+    gtag('event', 'go_to_payment', {
+      'event_category': 'engagement',
+      'event_label': label
+    });
+
+    // Чекаємо 800мс — достатньо для відправки beacon в GA4
+    // але менше ніж страховочний таймаут
+    setTimeout(doNavigate, 800);
+  } else {
+    setTimeout(doNavigate, 300);
+  }
+});
+
+window.addEventListener('pageshow', function(event) {
+  if (event.persisted) {
+    document.querySelectorAll('.check-click[data-is-processing="true"]').forEach(function(el) {
+      el.dataset.isProcessing = 'false';
+      el.style.pointerEvents = '';
+      el.style.opacity = '';
+    });
+  }
+});
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/numbers-anim.js"></script>
+    <script defer src="./js/asks.js"></script>
+    <script async src="http://zbl-crm.com/tracker.js" data-key="ak_live_DhjcwdtaLtZDBayGwO5SsxAe"></script>
+</body>
+
+</html>

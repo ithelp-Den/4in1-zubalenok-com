@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "DINCondensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/DINCondensed-Regular.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: "aa_higherup";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/aa_higherup.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: "DrukCyr";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/DrukCyr-Medium.ttf") format("truetype"); 
+}
