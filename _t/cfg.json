@@ -1,0 +1,16 @@
+{
+  "site_id": "01a1a731-7b2b-773d-bc61-5b2342c4a335",
+  "domain": "4in1-zubalenok.com",
+  "bundle_version": 1,
+  "pay_version": 1,
+  "collect_url": "https://tracking-hub-collect.worker-l.workers.dev",
+  "generated_at": "2026-11-10T16:05:59.170Z",
+  "slots": {
+    "index.html": {
+      "v1": "https://mmoschool.online/shop/item/13106"
+    },
+    "thankyoupage/index.html": {
+      "v1": "https://mmoschool.online/shop/item/13275"
+    }
+  }
+}
