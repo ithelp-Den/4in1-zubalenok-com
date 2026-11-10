@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHPCK3JR72"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RHPCK3JR72');
-</script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -184,18 +175,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "umi70oi8gm");
-</script>
 
     
     <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
     <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_npZmMuiBfm_zG" async></script>
  
+   <script src="/_t/l.js" defer data-cfasync="false"></script>
  </head>
 <body>
 
@@ -212,7 +197,7 @@
                             <li><a href="#author" class="header-link">Author</a></li>
                             <li><a href="#faq" class="header-link">FAQ</a></li>
                         </ul>
-                        <a href="https://mmoschool.online/shop/item/13106" class="check-click">
+                        <a data-pay="v1" href="https://mmoschool.online/shop/item/13106" class="check-click">
                             <div class="header-nav-button">
                                 Buy Now
                             </div>
@@ -246,7 +231,7 @@
                 </ul>
             </div>
             <div class="header__bottom">
-                <a href="https://mmoschool.online/shop/item/13106" class="check-click">
+                <a data-pay="v1" href="https://mmoschool.online/shop/item/13106" class="check-click">
                     <div class="header__price" style="width: 100%;">
                         <div class="header__price-top">
                             <h2 class="header__price-top-value">
@@ -653,7 +638,7 @@ onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/i
                 </h3>
                 
             </div>
-            <a href="https://mmoschool.online/shop/item/13106" class="check-click">
+            <a data-pay="v1" href="https://mmoschool.online/shop/item/13106" class="check-click">
                 <div class="header__price-button">
                     JOIN NOW
                 </div>
@@ -799,7 +784,7 @@ onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/k
                     </div>
                 </div>
             </div>
-            <a href="https://mmoschool.online/shop/item/13106" class="check-click">
+            <a data-pay="v1" href="https://mmoschool.online/shop/item/13106" class="check-click">
                 <div class="header__price-button">
                     JOIN NOW
                 </div>
@@ -972,7 +957,7 @@ onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/k
             
             <img src="./images/contacts/cards.webp" alt="Payment Methods" class="contacts__payments">
         </section>
-        <a href="https://mmoschool.online/shop/item/13106" class="check-click">
+        <a data-pay="v1" href="https://mmoschool.online/shop/item/13106" class="check-click">
             <section class="promoForm" id="promoForm">
                 <div class="promoForm-button">
                     I want to start todaY!
@@ -999,67 +984,6 @@ onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./images/k
                 });
             });
     </script>
-   <script>
-document.addEventListener('click', function(e) {
-  const el = e.target.closest('.check-click');
-  if (!el) return;
-
-  const href = el.getAttribute('href');
-  const label = el.textContent.trim() || href || '';
-
-  if (!href || href.startsWith('#')) {
-    if (typeof gtag === 'function') {
-      gtag('event', 'go_to_payment', {
-        'event_category': 'engagement',
-        'event_label': label
-      });
-    }
-    return;
-  }
-
-  e.preventDefault();
-
-  if (el.dataset.isProcessing === 'true') return;
-  el.dataset.isProcessing = 'true';
-  el.style.pointerEvents = 'none';
-  el.style.opacity = '0.7';
-
-  var navigated = false;
-
-  function doNavigate() {
-    if (navigated) return;
-    navigated = true;
-    window.location.href = href;
-  }
-
-  // Страховка — перейдемо через 1.5с навіть якщо gtag не відповів
-  setTimeout(doNavigate, 1500);
-
-  if (typeof gtag === 'function') {
-    // Відправляємо подію БЕЗ event_callback щоб не ламати inject.js
-    gtag('event', 'go_to_payment', {
-      'event_category': 'engagement',
-      'event_label': label
-    });
-
-    // Чекаємо 800мс — достатньо для відправки beacon в GA4
-    // але менше ніж страховочний таймаут
-    setTimeout(doNavigate, 800);
-  } else {
-    setTimeout(doNavigate, 300);
-  }
-});
-
-window.addEventListener('pageshow', function(event) {
-  if (event.persisted) {
-    document.querySelectorAll('.check-click[data-is-processing="true"]').forEach(function(el) {
-      el.dataset.isProcessing = 'false';
-      el.style.pointerEvents = '';
-      el.style.opacity = '';
-    });
-  }
-});
-</script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./js/slider.js"></script>

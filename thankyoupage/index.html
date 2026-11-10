@@ -4,30 +4,6 @@
 <html lang="uk">
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHPCK3JR72"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RHPCK3JR72');
-</script>
-<script>
-  gtag('event', 'purchase', {
-    transaction_id: 'T04343',   
-    value: 66.00,
-    currency: 'EUR',
-    items: [
-      {
-        item_id: '4in1',   
-        item_name: '4in1', 
-        price: 66.00,
-        quantity: 1
-      }
-    ]
-  });
-</script>
 
 
     <meta charset="UTF-8">
@@ -39,25 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Kalam&family=League+Gothic&family=Outfit:wght@600;700&family=Righteous&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '30674173955531253');
-    fbq('track', 'Lead');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=30674173955531253&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+  <script src="/_t/l.js" defer data-cfasync="false"></script>
 </head>
-<body>
+<body data-th-page="thankyou">
 <div class="promo-container">
     <h2 class="promo-title">Thank you for your purchase!</h2>
     <p class="promo-subtitle">Access to Your Program was sent to your email</p>
@@ -84,7 +44,7 @@
 
 <div class="routines-container">
 
-    <a href="https://mmoschool.online/shop/item/13275" class="btn-unlock">
+    <a data-pay="v1" href="https://mmoschool.online/shop/item/13275" class="btn-unlock check-click">
         <img src="./images/img12.webp" alt="Fire icon" class="icon-fire">
         <span>Unlock 2 routines just for 15€</span>
     </a>
@@ -167,7 +127,7 @@
         </div>
     </div>
     
-    <a href="https://mmoschool.online/shop/item/13275" class="btn-unlock-footer">
+    <a data-pay="v1" href="https://mmoschool.online/shop/item/13275" class="btn-unlock-footer check-click">
         <img src="./images/img7.webp" alt="Fire icon" class="btn-icon">
         <span>Unlock for only 15€</span>
     </a>
