@@ -29,33 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
-  // First question is open by default (per design)
-  const first = items[0];
-  if (first) {
-    first.classList.add("active");
-    const firstBottom = first.querySelector(".asksContainer-item-bottom");
-    // open instantly on page load (no slide animation), then restore the transition
-    firstBottom.style.transition = "none";
-    firstBottom.style.maxHeight = firstBottom.scrollHeight + "px";
-    void firstBottom.offsetHeight;
-    requestAnimationFrame(() => {
-      firstBottom.style.transition = "max-height 0.4s ease";
-    });
-    const firstArrow = first.querySelector(".q-arrow");
-    const firstQ = first.querySelector(".q");
-    firstArrow.style.transition = "none";
-    firstQ.style.transition = "none";
-    firstArrow.style.transform = "rotate(180deg)";
-    firstQ.style.color = "#97ff74";
-    requestAnimationFrame(() => {
-      firstArrow.style.transition = "";
-      firstQ.style.transition = "";
-    });
-    window.addEventListener("load", () => {
-      if (first.classList.contains("active")) {
-        firstBottom.style.maxHeight = firstBottom.scrollHeight + "px";
-      }
-    });
-  }
 })

@@ -3,21 +3,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!sliderEl) return;
 
-  // < 800px the layout is fluid (428px artboard): slide 313px + gap 24px
-  const mobileGap = () => Math.round((window.innerWidth * 24) / 428);
-
-  const swiper = new Swiper(sliderEl, {
+  new Swiper(sliderEl, {
     loop: true,
-    spaceBetween: mobileGap(),
+    spaceBetween: 20,
 
-    slidesPerView: 1.27,
+    slidesPerView: 1.3, // базове значення (до 440px)
 
     breakpoints: {
-      // desktop (1440 artboard): slides keep their natural width, 27px gap
+      440: {
+        slidesPerView: 2
+      },
+      600: {
+        slidesPerView: 3
+      },
+      700: {
+        slidesPerView: 4
+      },
       800: {
-        slidesPerView: "auto",
-        // site is capped at 1440px wide
-        spaceBetween: Math.round((Math.min(window.innerWidth, 1440) * 27) / 1440)
+        slidesPerView: 5 // максимум
       }
     },
 
@@ -31,11 +34,5 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".first-slider-prev"
     }
   });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth < 800) {
-      swiper.params.spaceBetween = mobileGap();
-      swiper.update();
-    }
-  });
 });
+
